@@ -31,10 +31,8 @@ public class QueryManager {
                 "       resource_link           AS \"Ссылка\"," +
                 "       type_value              AS \"Тип ресурса\"," +
                 "       theme_value             AS \"Тема\"," +
-                "       access_type_value       AS \"Тип доступа\"" +
-                " " +
-                "FROM   web_resources, type, theme, access_type" +
-                " " +
+                "       access_type_value       AS \"Тип доступа\" " +
+                "FROM   web_resources, type, theme, access_type " +
                 "WHERE  resource_type           = type.key          AND" +
                 "       resource_theme          = theme.key         AND" +
                 "       resource_access_type    = access_type.key ";
@@ -44,13 +42,9 @@ public class QueryManager {
         return " ORDER BY resource_name ";
     }
 
-    public String selectThemes() {
-        return " SELECT theme_value AS \"Тема\" FROM theme ";
-    }
+    public String selectThemes() { return " SELECT theme_value AS \"Тема\" FROM theme "; }
 
-    public String selectTypes() {
-        return " SELECT type_value AS \"Тип\" FROM types ";
-    }
+    public String selectTypes() { return " SELECT type_value AS \"Тип\" FROM types "; }
 
     public String selectAccessTypes() {
         return " SELECT access_type_value AS \"Тип доступа\" FROM access_types ";
@@ -59,8 +53,7 @@ public class QueryManager {
     // Простой поиск - по имени и описанию
     public String simpleSearchResource(String searchQuery) {
         return selectAll() + " AND " +
-                "       (                                              " +
-                "        resource_description LIKE  '%"+searchQuery+"%' OR" +
+                "       ( resource_description LIKE  '%"+searchQuery+"%' OR" +
                 "        resource_name LIKE         '%"+searchQuery+"%' )";
     }
 
@@ -69,16 +62,11 @@ public class QueryManager {
 
         String query = selectAll();
         query = query + " AND " + " ( ";
-        Integer count = lst.size();
-
-        for (Integer i = 0; i < count; i++) {
-            query = query + " '%"+lst.get(i).getAttributeName()+"%' LIKE '%"+lst.get(i).getAttributeValue()+"%' ";
-            if (i != count-1)
-                query = query + "OR ";
+        for (Integer i = 0; i < lst.size(); i++) {
+            query = query + " "+lst.get(i).getAttributeName()+" LIKE '%"+lst.get(i).getAttributeValue()+"%' ";
+            if (i != lst.size()-1) query = query + "OR ";
         }
-
         query = query + ")";
-
         return query;
     }
 }

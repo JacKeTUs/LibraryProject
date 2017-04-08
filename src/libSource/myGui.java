@@ -1,5 +1,7 @@
 package libSource;
 
+import sun.security.krb5.internal.crypto.Des;
+
 import java.sql.*;
 
 import javax.swing.*;
@@ -18,7 +20,14 @@ public class myGui {
     private JPanel panel1;
     private JButton button1;
     private JButton button2;
-    private JTextField textField1;
+    private JTextField searchEdit;
+    private JButton button3;
+    private JTextField NameEdit;
+    private JTextField DescrEdit;
+    private JTextField LinkEdit;
+    private JTextField ThemeEdit;
+    private JTextField TypeEdit;
+    private JTextField AccessTypeEdit;
     private DBFacade dbFacade;
     Statement stmt = null;
 
@@ -45,9 +54,17 @@ public class myGui {
                 button2_clicked();
             }
         });
+
+        button3.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                button3_clicked();
+            }
+        });
     }
 
 
+    // Выборка всего
     private void button1_clicked() {
         try {
             table1.setModel(buildTableModel(dbFacade.getAllResources()));
@@ -57,9 +74,10 @@ public class myGui {
             System.exit(-1);
         }
     }
+    // Кнопка, демонстрирующая простой поиск
     private void button2_clicked() {
         try {
-            table1.setModel(buildTableModel(dbFacade.simpleSearch(textField1.getText())));
+            table1.setModel(buildTableModel(dbFacade.simpleSearch(searchEdit.getText())));
         } catch (Exception ex) {
             ex.printStackTrace();
             System.err.println(ex.getClass().getName() + ": " + ex.getMessage());
@@ -67,6 +85,52 @@ public class myGui {
         }
     }
 
+    // Кнопка, демонстрирующая расш.поиск
+    private void button3_clicked() {
+        try {
+            AttributeList lst = new AttributeList();
+
+            AttributeName           atn = new AttributeName("");
+            AttributeDescription    atd = new AttributeDescription("");
+            AttributeLink           atl = new AttributeLink("");
+            AttributeTheme          ath = new AttributeTheme("");
+            AttributeType           atp = new AttributeType("");
+            AttributeAccessType     atat = new AttributeAccessType("");
+
+            if (!NameEdit.getText().isEmpty()) {
+                atn.setAttributeValue(NameEdit.getText());
+                lst.add(atn);
+            }
+            if (!DescrEdit.getText().isEmpty()) {
+                atd.setAttributeValue(DescrEdit.getText());
+                lst.add(atd);
+            }
+            if (!LinkEdit.getText().isEmpty()) {
+                atl.setAttributeValue(LinkEdit.getText());
+                lst.add(atl);
+            }
+            if (!ThemeEdit.getText().isEmpty()) {
+                ath.setAttributeValue(ThemeEdit.getText());
+                lst.add(ath);
+            }
+            if (!TypeEdit.getText().isEmpty()) {
+                atp.setAttributeValue(TypeEdit.getText());
+                lst.add(atp);
+            }
+            if (!AccessTypeEdit.getText().isEmpty()) {
+                atat.setAttributeValue(AccessTypeEdit.getText());
+                lst.add(atat);
+            }
+
+            if (lst.size() > 0)
+                table1.setModel(buildTableModel(dbFacade.extendedSearch(lst)));
+
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            System.err.println(ex.getClass().getName() + ": " + ex.getMessage());
+            System.exit(-1);
+        }
+    }
 
     public static void main(String[] args) {
 
@@ -81,8 +145,6 @@ public class myGui {
 
     public static TableModel buildTableModel(final ResultSet resultSet) throws SQLException {
         int columnCount = resultSet.getMetaData().getColumnCount();
-        System.out.println("Колонок:"+ columnCount);
-
 
         // Column names.
         Vector<String> columnNames = new Vector<>();
