@@ -19,7 +19,7 @@ public class DBManager {
     public Connection ConnectSQLiteDB() throws SQLException {
         Connection c = null;
 
-        dbConnection = DriverManager.getConnection("jdbc:sqlite:D:/LABS/6s/LIB/lib/db/db.sqlite3");
+        dbConnection = DriverManager.getConnection("jdbc:sqlite:./db/db.sqlite3");
         dbStatement = dbConnection.createStatement();
 
         System.out.println("Database was opened!");
