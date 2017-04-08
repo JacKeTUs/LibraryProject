@@ -6,6 +6,6 @@ public class AttributeDescription extends BaseAttribute
     public AttributeDescription(String _value)
     {
         value = _value;
-        name = "Description";
+        name = "resource_description";
     }
 }

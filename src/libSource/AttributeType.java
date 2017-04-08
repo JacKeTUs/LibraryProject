@@ -8,6 +8,6 @@ public class AttributeType extends BaseAttribute
     public AttributeType(String _value)
     {
         value = _value;
-        name = "Type";
+        name = "type_value";
     }
 }

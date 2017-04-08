@@ -8,6 +8,6 @@ public class AttributeTheme extends BaseAttribute
     public AttributeTheme(String _value)
     {
         value = _value;
-        name = "Theme";
+        name = "theme_value";
     }
 }

@@ -8,6 +8,6 @@ public class AttributeAccessType extends BaseAttribute
     public AttributeAccessType(String _value)
     {
         value = _value;
-        name = "AccessType";
+        name = "access_type_value";
     }
 }
