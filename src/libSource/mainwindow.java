@@ -23,6 +23,10 @@ public class mainwindow {
     private JRadioButton nameRadioButton;
     private JRadioButton sourceRadioButton;
     private JRadioButton themeRadioButton;
+    private JButton отменаПоискаButton;
+    private JButton удалитьРесурсButton;
+    private JButton добавитьРесурсButton;
+
 
     public mainwindow() {
         DefaultTableModel model = new DefaultTableModel();
@@ -35,12 +39,20 @@ public class mainwindow {
         model.addColumn("Theme");
         model.addColumn("Description");
         model.addColumn("Access Type");
+
+
         table1.setModel(model);
         openCardButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 new CardForm();
             }
+        });
+
+
+        changeUserButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) { new ChangeUser();}
         });
     }
 
@@ -94,8 +106,6 @@ public class mainwindow {
         frame.pack();
         frame.setVisible(true);
 
-        int a = 0;  // это что?
-        a++;
     }
 
 
