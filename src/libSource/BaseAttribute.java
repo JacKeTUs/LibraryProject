@@ -3,24 +3,30 @@ package libSource;
 
 public class BaseAttribute
 {
+    protected String tableName = "";
+    protected String name = "";
     protected String value = "";
 
-    protected String name = "";
-
-    public BaseAttribute(String _name, String _value)
+    public BaseAttribute(String _tableName, String _name, String _value)
     {
+        tableName = _tableName;
         name = _name;
         value = _value;
     }
 
     public BaseAttribute(BaseAttribute attr)
     {
+        tableName = attr.tableName;
         name = attr.name;
         value = attr.value;
     }
 
-    public BaseAttribute()
+    public BaseAttribute() {
+    }
+
+    public String getAttributeTableName()
     {
+        return tableName;
     }
 
     public String getAttributeName()
@@ -34,6 +40,10 @@ public class BaseAttribute
     }
 
 
+    public void setAttributeTableName(String _tableName)
+    {
+        tableName = _tableName;
+    }
 
     public void setAttributeName(String _name)
     {
@@ -44,4 +54,5 @@ public class BaseAttribute
     {
         value = _value;
     }
+
 }

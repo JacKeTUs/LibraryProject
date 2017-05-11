@@ -11,10 +11,7 @@ public class AttributeList
 
 
 
-    public AttributeList()
-    {
-
-    }
+    public AttributeList() {}
 
     public AttributeList(AttributeList attrList)
     {

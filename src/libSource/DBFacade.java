@@ -1,5 +1,8 @@
 package libSource;
 
+import org.sqlite.jdbc4.JDBC4ResultSet;
+
+import javax.xml.stream.events.Attribute;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -22,18 +25,23 @@ public class DBFacade {
     }
 
     // Получить все ресурсы
-    public ResultSet getAllResources() throws SQLException {
-        return dbManager.ExecQuery(queryManager.selectAll() + queryManager.orderBy());
+    public ResultSet getAllResources(BaseAttribute sortAttr) throws SQLException {
+        return dbManager.ExecQuery(queryManager.selectAll() + queryManager.orderBy(sortAttr));
+    }
+
+    // Получить некоторые ресурсы
+    public ResultSet getSomeResources(AttributeList lst, BaseAttribute sortAttr) throws SQLException {
+        return dbManager.ExecQuery(queryManager.extendedSelectFromMainTable(lst) + queryManager.orderBy(sortAttr));
     }
 
     // Получить все темы
-    public ResultSet getThemes() throws SQLException {
-        return dbManager.ExecQuery(queryManager.selectThemes() + queryManager.orderBy());
+    public ResultSet getThemes(BaseAttribute sortAttr) throws SQLException {
+        return dbManager.ExecQuery(queryManager.selectThemes() + queryManager.orderBy(sortAttr));
     }
 
     // Получить все типы
-    public ResultSet getTypes() throws SQLException {
-        return dbManager.ExecQuery(queryManager.selectTypes() + queryManager.orderBy());
+    public ResultSet getTypes(BaseAttribute sortAttr) throws SQLException {
+        return dbManager.ExecQuery(queryManager.selectTypes() + queryManager.orderBy(sortAttr));
     }
 
     // Простой поиск
@@ -41,7 +49,27 @@ public class DBFacade {
         return dbManager.ExecQuery(queryManager.simpleSearchResource(searchQuery));
     }
 
-    public ResultSet extendedSearch(AttributeList lst) throws SQLException {
-        return dbManager.ExecQuery(queryManager.extendedSearch(lst));
+    public ResultSet extendedSearch(AttributeList lstOut, AttributeList lst) throws SQLException {
+        return dbManager.ExecQuery(queryManager.extendedSelectFromMainTable(lstOut) + queryManager.extendedSearch(lst));
     }
+
+    public ResultSet getCard(int id) throws  SQLException {
+        return null;
+    }
+
+    public void deleteSource(int id) throws  SQLException {
+        return;
+    }
+
+    public void editSource(int id, BaseSource src) throws  SQLException {
+        return;
+    }
+
+    public int addSource(BaseSource src) throws  SQLException {
+        return 0;
+    }
+
+
+
+
 }

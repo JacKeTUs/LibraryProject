@@ -1,5 +1,6 @@
 package libSource;
 
+import com.sun.xml.internal.ws.api.streaming.XMLStreamWriterFactory;
 import sun.security.krb5.internal.crypto.Des;
 
 import java.sql.*;
@@ -67,7 +68,27 @@ public class myGui {
     // Выборка всего
     private void button1_clicked() {
         try {
-            table1.setModel(buildTableModel(dbFacade.getAllResources()));
+           // table1.setModel(buildTableModel(dbFacade.getAllResources()));
+            AttributeList lst = new AttributeList();
+
+            AttributeName           atn = new AttributeName("");
+            AttributeDescription    atd = new AttributeDescription("");
+            AttributeLink           atl = new AttributeLink("");
+            AttributeTheme          ath = new AttributeTheme("");
+            AttributeType           atp = new AttributeType("");
+            AttributeAccessType     atat = new AttributeAccessType("");
+
+
+            lst.add(atn);
+            lst.add(atd);
+            lst.add(atl);
+            lst.add(ath);
+            lst.add(atp);
+            lst.add(atat);
+
+
+            table1.setModel(buildTableModel(dbFacade.getSomeResources(lst, atn)));
+
         } catch (Exception ex) {
             ex.printStackTrace();
             System.err.println(ex.getClass().getName() + ": " + ex.getMessage());
@@ -89,7 +110,7 @@ public class myGui {
     private void button3_clicked() {
         try {
             AttributeList lst = new AttributeList();
-
+            
             AttributeName           atn = new AttributeName("");
             AttributeDescription    atd = new AttributeDescription("");
             AttributeLink           atl = new AttributeLink("");
@@ -122,8 +143,25 @@ public class myGui {
                 lst.add(atat);
             }
 
+            AttributeList lstOut = new AttributeList();
+
+            AttributeName           atnO = new AttributeName("");
+            AttributeDescription    atdO = new AttributeDescription("");
+            AttributeLink           atlO = new AttributeLink("");
+            AttributeTheme          athO = new AttributeTheme("");
+            AttributeType           atpO = new AttributeType("");
+            AttributeAccessType     atatO = new AttributeAccessType("");
+
+
+            lstOut.add(atn);
+            lstOut.add(atd);
+          //  lstOut.add(atl);
+          //  lstOut.add(ath);
+            lstOut.add(atp);
+            lstOut.add(atat);
+
             if (lst.size() > 0)
-                table1.setModel(buildTableModel(dbFacade.extendedSearch(lst)));
+                table1.setModel(buildTableModel(dbFacade.extendedSearch(lstOut, lst)));
 
         } catch (Exception ex) {
             ex.printStackTrace();

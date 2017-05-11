@@ -7,7 +7,8 @@ public class AttributeTheme extends BaseAttribute
 {
     public AttributeTheme(String _value)
     {
-        value = _value;
+        tableName = "theme";
         name = "theme_value";
+        value = _value;
     }
 }
