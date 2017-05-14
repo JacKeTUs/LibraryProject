@@ -81,7 +81,7 @@ public class myGui {
             AttributeTheme          ath = new AttributeTheme("");
             AttributeType           atp = new AttributeType("");
             AttributeAccessType     atat = new AttributeAccessType("");
-
+            AttributeKind           atk  = new AttributeKind("");
 
             lst.add(atn);
             lst.add(atd);
@@ -89,6 +89,7 @@ public class myGui {
             lst.add(ath);
             lst.add(atp);
             lst.add(atat);
+            lst.add(atk);
 
 
             table1.setModel(buildTableModel(dbFacade.getSomeResources(lst, atn)));
