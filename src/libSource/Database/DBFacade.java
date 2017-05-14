@@ -1,8 +1,7 @@
-package libSource;
+package libSource.Database;
+import  libSource.Attributes.*;
+import  libSource.*;
 
-import org.sqlite.jdbc4.JDBC4ResultSet;
-
-import javax.xml.stream.events.Attribute;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;

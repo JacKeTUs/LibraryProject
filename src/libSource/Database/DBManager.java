@@ -1,4 +1,6 @@
-package libSource;
+package libSource.Database;
+import  libSource.Attributes.*;
+import  libSource.*;
 
 import java.sql.Connection;
 import java.sql.Statement;

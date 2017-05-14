@@ -1,5 +1,6 @@
-package libSource;
-
+package libSource.Database;
+import  libSource.Attributes.*;
+import  libSource.*;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

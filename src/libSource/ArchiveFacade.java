@@ -1,4 +1,5 @@
 package libSource;
+import libSource.Database.*;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
