@@ -1,4 +1,5 @@
 package libSource;
+import  libSource.Attributes.*;
 
 /**
  * Created by Антон on 06.04.2017.

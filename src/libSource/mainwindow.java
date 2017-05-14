@@ -1,4 +1,5 @@
 package libSource;
+import  libSource.Attributes.*;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
