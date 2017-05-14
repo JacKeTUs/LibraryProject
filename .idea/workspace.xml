@@ -1,52 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ac3634b-0114-4d4d-bc9e-787f2a8c3ef4" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dictionaries/JacKeTUs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/libSource/ArchiveFacade.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/libSource/AttributeList.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/libSource/AttributeListWorker.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/libSource/Attributes/AttributeAccessType.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/libSource/Attributes/AttributeAmount.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/libSource/Attributes/AttributeArchivationDate.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/libSource/Attributes/AttributeChronologic.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/libSource/Attributes/AttributeContent.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/libSource/Attributes/AttributeContractDetails.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/libSource/Attributes/AttributeContractDuration.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/libSource/Attributes/AttributeDescription.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/libSource/Attributes/AttributeKind.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/libSource/Attributes/AttributeLanguage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/libSource/Attributes/AttributeLink.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/libSource/Attributes/AttributeName.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/libSource/Attributes/AttributeOperator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/libSource/Attributes/AttributePayType.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/libSource/Attributes/AttributePublicationArchive.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/libSource/Attributes/AttributeSourceInfo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/libSource/Attributes/AttributeStatus.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/libSource/Attributes/AttributeSubscriptionAccessType.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/libSource/Attributes/AttributeSubscriptionPrice.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/libSource/Attributes/AttributeSubscriptionSource.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/libSource/Attributes/AttributeSubscriptionType.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/libSource/Attributes/AttributeTestAccess.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/libSource/Attributes/AttributeTestAccessConclusion.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/libSource/Attributes/AttributeTheme.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/libSource/Attributes/AttributeType.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/libSource/Attributes/BaseAttribute.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/libSource/BaseAttributeListWorker.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/libSource/BaseSource.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/libSource/CardForm.form" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/libSource/CardForm.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/libSource/ChangeUser.form" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/libSource/ChangeUser.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/libSource/Database/DBFacade.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/libSource/Database/DBManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/libSource/Database/QueryManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/libSource/Source.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/libSource/SourceList.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/libSource/mainwindow.form" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/libSource/mainwindow.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/libSource/oldInterface/myGui.form" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/libSource/oldInterface/myGui.java" afterPath="" />
+    <list default="true" id="0ac3634b-0114-4d4d-bc9e-787f2a8c3ef4" name="Default" comment="Another fix...">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/libSource/ArchiveFacade.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/libSource/AttributeList.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/libSource/AttributeListWorker.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/libSource/Attributes/AttributeAccessType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/libSource/Attributes/AttributeAmount.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/libSource/Attributes/AttributeArchivationDate.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/libSource/Attributes/AttributeChronologic.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/libSource/Attributes/AttributeContent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/libSource/Attributes/AttributeContractDetails.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/libSource/Attributes/AttributeContractDuration.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/libSource/Attributes/AttributeDescription.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/libSource/Attributes/AttributeKind.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/libSource/Attributes/AttributeLanguage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/libSource/Attributes/AttributeLink.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/libSource/Attributes/AttributeName.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/libSource/Attributes/AttributeOperator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/libSource/Attributes/AttributePayType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/libSource/Attributes/AttributePublicationArchive.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/libSource/Attributes/AttributeSourceInfo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/libSource/Attributes/AttributeStatus.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/libSource/Attributes/AttributeSubscriptionAccessType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/libSource/Attributes/AttributeSubscriptionPrice.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/libSource/Attributes/AttributeSubscriptionSource.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/libSource/Attributes/AttributeSubscriptionType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/libSource/Attributes/AttributeTestAccess.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/libSource/Attributes/AttributeTestAccessConclusion.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/libSource/Attributes/AttributeTheme.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/libSource/Attributes/AttributeType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/libSource/Attributes/BaseAttribute.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/libSource/BaseAttributeListWorker.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/libSource/BaseSource.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/libSource/CardForm.form" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/libSource/CardForm.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/libSource/ChangeUser.form" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/libSource/ChangeUser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/libSource/Database/DBFacade.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/libSource/Database/DBManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/libSource/Database/QueryManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/libSource/Source.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/libSource/SourceList.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/libSource/mainwindow.form" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/libSource/mainwindow.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/libSource/oldInterface/myGui.form" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/libSource/oldInterface/myGui.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libSource/ArchiveFacade.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libSource/AttributeList.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libSource/AttributeListWorker.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libSource/Attributes/AttributeAccessType.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libSource/Attributes/AttributeAmount.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libSource/Attributes/AttributeArchivationDate.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libSource/Attributes/AttributeChronologic.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libSource/Attributes/AttributeContent.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libSource/Attributes/AttributeContractDetails.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libSource/Attributes/AttributeContractDuration.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libSource/Attributes/AttributeDescription.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libSource/Attributes/AttributeKind.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libSource/Attributes/AttributeLanguage.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libSource/Attributes/AttributeLink.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libSource/Attributes/AttributeName.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libSource/Attributes/AttributeOperator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libSource/Attributes/AttributePayType.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libSource/Attributes/AttributePublicationArchive.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libSource/Attributes/AttributeSourceInfo.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libSource/Attributes/AttributeStatus.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libSource/Attributes/AttributeSubscriptionAccessType.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libSource/Attributes/AttributeSubscriptionPrice.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libSource/Attributes/AttributeSubscriptionSource.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libSource/Attributes/AttributeSubscriptionType.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libSource/Attributes/AttributeTestAccess.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libSource/Attributes/AttributeTestAccessConclusion.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libSource/Attributes/AttributeTheme.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libSource/Attributes/AttributeType.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libSource/Attributes/BaseAttribute.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libSource/BaseAttributeListWorker.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libSource/BaseSource.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libSource/CardForm.form" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libSource/CardForm.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libSource/ChangeUser.form" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libSource/ChangeUser.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libSource/Database/DBFacade.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libSource/Database/DBManager.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libSource/Database/QueryManager.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libSource/Source.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libSource/SourceList.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libSource/mainwindow.form" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libSource/mainwindow.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libSource/oldInterface/myGui.form" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libSource/oldInterface/myGui.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -223,6 +266,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="LibraryProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LibraryProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LibraryProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libSource" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -611,18 +672,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1576" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34856755" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281037" sideWeight="0.4859375" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3281037" sideWeight="0.484375" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23328786" sideWeight="0.375" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3281037" sideWeight="0.515625" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23328786" sideWeight="0.625" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23328786" sideWeight="0.625" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -636,11 +696,33 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34282586" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23328786" sideWeight="0.375" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34282586" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34856755" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281037" sideWeight="0.4859375" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23328786" sideWeight="0.625" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16171876" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -656,7 +738,8 @@
     <MESSAGE value="New fixes, yay! *-*" />
     <MESSAGE value="Prepare to merge" />
     <MESSAGE value="Merge with database" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge with database" />
+    <MESSAGE value="Another fix..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Another fix..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
