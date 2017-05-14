@@ -1,6 +1,8 @@
-package libSource;
-import  libSource.Database.*;
-import  libSource.Attributes.*;
+package libSource.oldInterface;
+
+import libSource.*;
+import libSource.Database.*;
+import libSource.Attributes.*;
 
 import com.sun.xml.internal.ws.api.streaming.XMLStreamWriterFactory;
 import sun.security.krb5.internal.crypto.Des;
@@ -172,7 +174,7 @@ public class myGui {
         }
     }
 
-    public static void main_old_interface(String[] args) {
+    public static void main(String[] args) {
 
         myGui Window = new myGui();
 
