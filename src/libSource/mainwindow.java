@@ -5,6 +5,7 @@ import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.*;
+import java.util.Vector;
 import java.util.Iterator;
 
 /**
@@ -27,6 +28,7 @@ public class mainwindow {
     private JButton отменаПоискаButton;
     private JButton удалитьРесурсButton;
     private JButton добавитьРесурсButton;
+    private JButton getbutton;
 
 
     public mainwindow() {
@@ -35,14 +37,14 @@ public class mainwindow {
         table1.setAutoCreateRowSorter(true);
         table1.setFillsViewportHeight(true);
         table1.setPreferredScrollableViewportSize(new Dimension(550, 200));
-        model.addColumn("Name");
-        model.addColumn("Source");
-        model.addColumn("Theme");
-        model.addColumn("Description");
-        model.addColumn("Access Type");
+        //model.addColumn("Name");
+        //model.addColumn("Description");
+        //model.addColumn("Source");
+        //model.addColumn("Theme");
+        // model.addColumn("Description");
+        //model.addColumn("Access Type");
 
-
-        table1.setModel(model);
+        //table1.setModel(model);
         openCardButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -55,52 +57,40 @@ public class mainwindow {
             @Override
             public void actionPerformed(ActionEvent e) { new ChangeUser();}
         });
+
+        getbutton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                AttributeList temp = new AttributeList();
+                temp.add(new AttributeName());
+                temp.add(new AttributeDescription());
+                Managerofdata mgr = new Managerofdata;
+                List<AttributeList> lst = mgr.getsorces(temp);
+
+
+                for(int i = 0; i < lst.size; i++)
+                {
+                    AttributeList temp2;
+                    temp2 = lst.get(i);
+                    Vector<String> vct =  new Vector<>();
+                    for (int j = 0; j < temp2.size(); j++)
+                    {
+                        BaseAttribute temp3 = temp2.get(j);
+                        vct.add(temp3.getAttributeValue());
+                    }
+                    model.addRow(vct);
+
+
+                }
+
+                table1.setModel(model);
+
+            }
+        });
     }
 
     public static void main(String[] args)
     {
-        //  Attributes test
-        AttributeLink attributeLink = new AttributeLink("l");
-        AttributeAccessType attributeAccessType = new AttributeAccessType("at");
-        AttributeDescription attributeDescription = new AttributeDescription("d");
-        AttributeName attributeName = new AttributeName("n");
-        AttributeTheme attributeTheme = new AttributeTheme("th");
-        AttributeType attributeType = new AttributeType("t");
-
-        //  Attribute list test
-        AttributeList attributeList = new AttributeList();
-        attributeList.add(attributeAccessType);
-        attributeList.add(attributeLink);
-        attributeList.add(attributeDescription);
-        attributeList.add(attributeName);
-        attributeList.add(attributeTheme);
-        attributeList.add(attributeType);
-
-        Iterator<BaseAttribute> itr = attributeList.getIterator();
-        while(itr.hasNext())
-        {
-            System.out.println(itr.next().getAttributeName());
-        }
-
-        attributeList.setAttributeValue(3, "1111");
-        attributeList.setAttributeValue("Description", "dddddd");
-        attributeList.set(0, attributeName);
-        attributeList.set(0, attributeAccessType);
-        attributeList.add(attributeName);
-        attributeList.remove(attributeList.size() - 1);
-
-        //  Source test
-        System.out.println("\n");
-        Source source = new Source(attributeList);
-        System.out.println(source.getAccessType());
-        System.out.println(source.getName());
-        System.out.println(source.getType());
-        System.out.println(source.getDescription());
-        System.out.println(source.getLink());
-        System.out.println(source.getTheme());
-
-
-
         JFrame frame = new JFrame("mainwindow");
         frame.setContentPane(new mainwindow().panel1);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
