@@ -94,7 +94,7 @@ public class QueryManager {
     }
 
     public String orderBy(BaseAttribute sortAttr) {
-        return " ORDER BY " + sortAttr.getAttributeName() + " ";
+        return " ORDER BY " + sortAttr.getAttributeName() + " desc ";
     }
 
     public String selectThemes() { return " SELECT theme_value AS \"Тема\" FROM theme "; }
